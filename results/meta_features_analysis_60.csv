@@ -1,0 +1,3 @@
+method,nr_inst,inst_to_attr,EPV,diff_autogluon,n3.nansd,n3.nanvar,n3.sd,n3.var,leaves_corrob.nanskewness,leaves_corrob.skewness,conceptvar.max,conceptvar.nanmax,conceptvar.nanquantiles.4,conceptvar.quantiles.4,attr_conc.count,attr_conc.histogram.0,attr_conc.histogram.1,attr_conc.histogram.2,attr_conc.histogram.3,attr_conc.histogram.4,attr_conc.histogram.5,attr_conc.histogram.6,attr_conc.histogram.7,attr_conc.histogram.8,attr_conc.histogram.9
+autogluon,0.01616006275833021,0.10538461538461538,0.1661858080366375,1.0,0.65,0.65,0.65,0.65,0.62,0.62,0.6,0.6,0.6,0.6,,,,,,,,,,,
+Logistic Regression,,,,,,,,,,,,,,,,,,,,,,,,,
