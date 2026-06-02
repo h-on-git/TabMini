@@ -51,7 +51,7 @@ def run_experiment(framework, output_path, time_limit):
         scoring_method="roc_auc",
         cv=2,
         time_limit=time_limit,
-        framework=framework,
+        methods={framework},
         device="cpu",
         n_jobs=1,  # Time Limit does not play nice with threads
     )

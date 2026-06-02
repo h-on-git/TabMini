@@ -1,0 +1,104 @@
+AutoPrognosis, largest positive:
+n2.histogram.9                0.52283
+joint_ent.histogram.6         0.49308
+joint_ent.nanhistogram.6      0.49308
+n2.nanhistogram.9             0.49124
+kurtosis.skewness             0.45415
+one_itemset.histogram.7       0.45368
+one_itemset.nanhistogram.7    0.45368
+kurtosis.histogram.1          0.44632
+n2.histogram.8                0.44343
+max.min                       0.43844
+Name: diff_AutoPrognosis, dtype: float64
+
+AutoPrognosis, largest negative:
+elite_nn.histogram.5                   -0.47060
+elite_nn.nanhistogram.5                -0.47060
+one_itemset.nanskewness                -0.41216
+one_itemset.skewness                   -0.41216
+f1.histogram.5                         -0.40701
+sparsity.nanskewness                   -0.40600
+sparsity.skewness                      -0.40600
+f1.nanhistogram.5                      -0.40185
+linear_discr.histogram.6.relative      -0.39554
+linear_discr.nanhistogram.6.relative   -0.39554
+Name: diff_AutoPrognosis, dtype: float64
+
+AutoGluon, largest positive:
+wg_dist.histogram.7         0.50720
+wg_dist.nanhistogram.7      0.50720
+cls_coef                    0.45736
+h_mean.histogram.5          0.44746
+conceptvar.kurtosis         0.44692
+conceptvar.nankurtosis      0.44692
+g_mean.histogram.5          0.42712
+linear_discr.nanskewness    0.41187
+linear_discr.skewness       0.41187
+wg_dist.histogram.6         0.40999
+Name: diff_AutoGluon, dtype: float64
+
+AutoGluon, largest negative:
+nodes_per_level.kurtosis               -0.46477
+nodes_per_level.nankurtosis            -0.46477
+linear_discr.histogram.6.relative      -0.46186
+linear_discr.nanhistogram.6.relative   -0.46186
+n2.nanhistogram.2                      -0.45244
+n2.histogram.2                         -0.44248
+wg_dist.kurtosis                       -0.43581
+wg_dist.nankurtosis                    -0.43581
+h_mean.histogram.9                     -0.42352
+impconceptvar.mean                     -0.42245
+Name: diff_AutoGluon, dtype: float64
+
+TabPFN, largest positive:
+h_mean.histogram.5          0.54142
+g_mean.histogram.5          0.51147
+g_mean.nanhistogram.5       0.50238
+h_mean.nanhistogram.5       0.49941
+max.histogram.5             0.48166
+max.nanhistogram.5          0.48166
+range.histogram.5           0.46995
+range.nanhistogram.5        0.46995
+linear_discr.nanskewness    0.45539
+linear_discr.skewness       0.45539
+Name: diff_TabPFN, dtype: float64
+
+TabPFN, largest negative:
+h_mean.histogram.9             -0.62518
+g_mean.histogram.9             -0.61243
+h_mean.nanhistogram.9          -0.60814
+g_mean.nanhistogram.9          -0.60643
+min.histogram.9                -0.52539
+min.nanhistogram.9             -0.52539
+impconceptvar.histogram.9      -0.48121
+impconceptvar.nanhistogram.9   -0.48121
+n2.nanhistogram.2              -0.47348
+n2.histogram.2                 -0.46079
+Name: diff_TabPFN, dtype: float64
+
+HyperFast, largest positive:
+min.nanskewness         0.48844
+min.skewness            0.48844
+h_mean.nankurtosis      0.47969
+g_mean.nankurtosis      0.46605
+sparsity.nanpnorm       0.45972
+sparsity.nanpowersum    0.45972
+sparsity.pnorm          0.45972
+sparsity.powersum       0.45972
+vdu                     0.45352
+sparsity.nansum         0.44229
+Name: diff_HyperFast, dtype: float64
+
+HyperFast, largest negative:
+worst_node.histogram.3.relative      -0.47009
+worst_node.nanhistogram.3.relative   -0.47009
+impconceptvar.histogram.8            -0.44072
+impconceptvar.nanhistogram.8         -0.44072
+impconceptvar.histogram.9            -0.43420
+impconceptvar.nanhistogram.9         -0.43420
+worst_node.histogram.3               -0.39965
+worst_node.nanhistogram.3            -0.39965
+n4.iq_range                          -0.39952
+n4.naniq_range                       -0.39952
+Name: diff_HyperFast, dtype: float64
+
