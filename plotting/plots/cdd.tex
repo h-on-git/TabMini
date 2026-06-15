@@ -1,0 +1,32 @@
+\documentclass[tikz]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\pgfplotsset{every axis legend/.append style={%
+cells={anchor=west}}
+}
+\usetikzlibrary{arrows}
+\tikzset{>=stealth'}
+
+\begin{document}
+\begin{tikzpicture}[]
+\begin{axis}[
+  axis x line=center, axis y line=none, xmin=1, xmax=5, ymin=-4.5, ymax=0, scale only axis, height=5\baselineskip, width=\axisdefaultwidth, ticklabel style={anchor=south, yshift=1.33*\pgfkeysvalueof{/pgfplots/major tick length}, font=\small}, every tick/.style={yshift=.5*\pgfkeysvalueof{/pgfplots/major tick length}}, axis line style={-}, title style={yshift=\baselineskip}, xtick={1,2,3,4,5}, x dir=reverse
+]
+
+\draw[semithick, rounded corners=1pt] (axis cs:2.352272727272727, 0) |- (axis cs:1.0, -2.0) node[font=\small, fill=white, inner xsep=5pt, outer xsep=-5pt, anchor=east] {TabPFN};
+
+\draw[semithick, rounded corners=1pt] (axis cs:2.5454545454545454, 0) |- (axis cs:1.0, -3.0) node[font=\small, fill=white, inner xsep=5pt, outer xsep=-5pt, anchor=east] {AutoPrognosis};
+
+\draw[semithick, rounded corners=1pt] (axis cs:2.5681818181818183, 0) |- (axis cs:5.0, -3.5) node[font=\small, fill=white, inner xsep=5pt, outer xsep=-5pt, anchor=west] {AutoGluon};
+
+\draw[semithick, rounded corners=1pt] (axis cs:3.6136363636363638, 0) |- (axis cs:5.0, -2.5) node[font=\small, fill=white, inner xsep=5pt, outer xsep=-5pt, anchor=west] {Logistic regression};
+
+\draw[semithick, rounded corners=1pt] (axis cs:3.9204545454545454, 0) |- (axis cs:5.0, -1.5) node[font=\small, fill=white, inner xsep=5pt, outer xsep=-5pt, anchor=west] {HyperFast};
+
+\draw[ultra thick, line cap=round] (axis cs:3.6136363636363638, -0.5) -- (axis cs:3.9204545454545454, -0.5);
+
+\draw[ultra thick, line cap=round] (axis cs:2.352272727272727, -1.0) -- (axis cs:2.5681818181818183, -1.0);
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

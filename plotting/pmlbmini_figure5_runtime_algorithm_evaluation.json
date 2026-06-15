@@ -1,0 +1,444 @@
+{
+  "@id": "_:n1",
+  "@type": "doi:feeb33ad3e4440682a4d",
+  "doi:feeb33ad3e4440682a4d#has_part": {
+    "@id": "_:n2",
+    "@type": "doi:5e782e67e70d0b2a022a",
+    "doi:5e782e67e70d0b2a022a#label": "Runtime-budget comparison of machine learning methods on PMLBmini datasets using test AUC.",
+    "doi:5e782e67e70d0b2a022a#executes": {
+      "@id": "_:n3",
+      "@type": "doi:abef9f1c0d48853f3e51",
+      "doi:abef9f1c0d48853f3e51#label": "Figure 5 runtime plot generation in walkthrough.ipynb",
+      "doi:abef9f1c0d48853f3e51#part_of": {
+        "@id": "_:n4",
+        "@type": "doi:4b99260369df9110f9bd",
+        "doi:4b99260369df9110f9bd#label": "Python helper generate_runtime_plot, pandas, matplotlib",
+        "doi:4b99260369df9110f9bd#part_of": {
+          "@id": "_:n5",
+          "@type": "doi:c981d125d1a564c9f573",
+          "doi:c981d125d1a564c9f573#label": "Python",
+          "doi:c981d125d1a564c9f573#version_info": "3"
+        }
+      },
+      "doi:abef9f1c0d48853f3e51#is_implemented_by": "\npy\"generate_runtime_plot\"(\n    [30, 60, 300, 900, 3600],\n    [\"AutoPrognosis\", \"AutoGluon\", \"TabPFN\", \"HyperFast\", \"Logistic regression\"],\n    \"results\"\n)\n"
+    },
+    "doi:5e782e67e70d0b2a022a#evaluates": {
+      "@id": "_:n6",
+      "@type": "doi:02f02485ab679a9031f4",
+      "doi:02f02485ab679a9031f4#label": "AutoPrognosis, AutoGluon, TabPFN, HyperFast, Logistic regression"
+    },
+    "doi:5e782e67e70d0b2a022a#evaluates_for": {
+      "@id": "_:n7",
+      "@type": "doi:7bb0ddf9221c03b806b0",
+      "doi:7bb0ddf9221c03b806b0#label": "Binary tabular classification under different runtime budgets"
+    },
+    "doi:5e782e67e70d0b2a022a#has_input": {
+      "@id": "_:n8",
+      "@type": "doi:aff130c76e68ead3862e",
+      "doi:aff130c76e68ead3862e#label": "PMLBmini benchmark test score files for runtime budgets 30, 60, 300, 900, and 3600 seconds."
+    },
+    "doi:5e782e67e70d0b2a022a#has_output": {
+      "@id": "_:n9",
+      "@type": "doi:aff130c76e68ead3862e",
+      "doi:aff130c76e68ead3862e#label": "Median test AUC by method and runtime budget for Figure 5",
+      "doi:aff130c76e68ead3862e#source_table": {
+        "@type": "doi:0424f6e7026fa4bc2c4a",
+        "tab_label": "Table",
+        "columns": [
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 1,
+            "col_titles": "time_limit_seconds",
+            "@id": "_:n10"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 2,
+            "col_titles": "approach",
+            "@id": "_:n11"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 3,
+            "col_titles": "median_auc",
+            "@id": "_:n12"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 4,
+            "col_titles": "number_of_datasets",
+            "@id": "_:n13"
+          }
+        ],
+        "rows": [
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 1,
+            "row_titles": "0",
+            "@id": "_:n14",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n15",
+                "value": "30",
+                "column": "_:n10"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n16",
+                "value": "AutoGluon",
+                "column": "_:n11"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n17",
+                "value": "0.86",
+                "column": "_:n12"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n18",
+                "value": "44",
+                "column": "_:n13"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 2,
+            "row_titles": "1",
+            "@id": "_:n19",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n20",
+                "value": "60",
+                "column": "_:n10"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n21",
+                "value": "AutoGluon",
+                "column": "_:n11"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n22",
+                "value": "0.885",
+                "column": "_:n12"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n23",
+                "value": "44",
+                "column": "_:n13"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 3,
+            "row_titles": "2",
+            "@id": "_:n24",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n25",
+                "value": "300",
+                "column": "_:n10"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n26",
+                "value": "AutoPrognosis",
+                "column": "_:n11"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n27",
+                "value": "0.875",
+                "column": "_:n12"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n28",
+                "value": "44",
+                "column": "_:n13"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 4,
+            "row_titles": "3",
+            "@id": "_:n29",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n30",
+                "value": "300",
+                "column": "_:n10"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n31",
+                "value": "AutoGluon",
+                "column": "_:n11"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n32",
+                "value": "0.89",
+                "column": "_:n12"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n33",
+                "value": "44",
+                "column": "_:n13"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 5,
+            "row_titles": "4",
+            "@id": "_:n34",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n35",
+                "value": "900",
+                "column": "_:n10"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n36",
+                "value": "AutoGluon",
+                "column": "_:n11"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n37",
+                "value": "0.885",
+                "column": "_:n12"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n38",
+                "value": "44",
+                "column": "_:n13"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 6,
+            "row_titles": "5",
+            "@id": "_:n39",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n40",
+                "value": "900",
+                "column": "_:n10"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n41",
+                "value": "AutoPrognosis",
+                "column": "_:n11"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n42",
+                "value": "0.88",
+                "column": "_:n12"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n43",
+                "value": "44",
+                "column": "_:n13"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 7,
+            "row_titles": "6",
+            "@id": "_:n44",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n45",
+                "value": "3600",
+                "column": "_:n10"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n46",
+                "value": "AutoPrognosis",
+                "column": "_:n11"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n47",
+                "value": "0.88",
+                "column": "_:n12"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n48",
+                "value": "44",
+                "column": "_:n13"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 8,
+            "row_titles": "7",
+            "@id": "_:n49",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n50",
+                "value": "3600",
+                "column": "_:n10"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n51",
+                "value": "AutoGluon",
+                "column": "_:n11"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n52",
+                "value": "0.89",
+                "column": "_:n12"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n53",
+                "value": "44",
+                "column": "_:n13"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 9,
+            "row_titles": "8",
+            "@id": "_:n54",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n55",
+                "value": "3600",
+                "column": "_:n10"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n56",
+                "value": "TabPFN",
+                "column": "_:n11"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n57",
+                "value": "0.88",
+                "column": "_:n12"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n58",
+                "value": "44",
+                "column": "_:n13"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 10,
+            "row_titles": "9",
+            "@id": "_:n59",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n60",
+                "value": "3600",
+                "column": "_:n10"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n61",
+                "value": "Logistic regression",
+                "column": "_:n11"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n62",
+                "value": "0.85",
+                "column": "_:n12"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n63",
+                "value": "44",
+                "column": "_:n13"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 11,
+            "row_titles": "10",
+            "@id": "_:n64",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n65",
+                "value": "3600",
+                "column": "_:n10"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n66",
+                "value": "HyperFast",
+                "column": "_:n11"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n67",
+                "value": "0.865",
+                "column": "_:n12"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n68",
+                "value": "44",
+                "column": "_:n13"
+              }
+            ]
+          }
+        ],
+        "@id": "_:n69"
+      }
+    }
+  },
+  "@context": {
+    "doi": "https://doi.org/21.T11969/",
+    "columns": "https://doi.org/21.T11969/0424f6e7026fa4bc2c4a#columns",
+    "col_number": "https://doi.org/21.T11969/65ba00e95e60fb8971e6#number",
+    "col_titles": "https://doi.org/21.T11969/65ba00e95e60fb8971e6#titles",
+    "rows": "https://doi.org/21.T11969/0424f6e7026fa4bc2c4a#rows",
+    "row_number": "https://doi.org/21.T11969/9bf7a8e8909bfd491b38#number",
+    "row_titles": "https://doi.org/21.T11969/9bf7a8e8909bfd491b38#titles",
+    "cells": "https://doi.org/21.T11969/9bf7a8e8909bfd491b38#cells",
+    "column": "https://doi.org/21.T11969/4607bc7c42ac8db29bfc#column",
+    "value": "https://doi.org/21.T11969/4607bc7c42ac8db29bfc#value",
+    "tab_label": "https://doi.org/21.T11969/0424f6e7026fa4bc2c4a#label"
+  }
+}
