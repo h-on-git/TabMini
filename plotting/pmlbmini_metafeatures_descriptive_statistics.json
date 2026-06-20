@@ -1,0 +1,2122 @@
+{
+  "@id": "_:n1",
+  "@type": "doi:feeb33ad3e4440682a4d",
+  "doi:feeb33ad3e4440682a4d#has_part": {
+    "@id": "_:n2",
+    "@type": "doi:5b66cb584b974b186f37",
+    "doi:5b66cb584b974b186f37#label": "Descriptive statistics of PMLBmini dataset meta-features, including sample size and feature set size.",
+    "doi:5b66cb584b974b186f37#executes": {
+      "@id": "_:n3",
+      "@type": "doi:abef9f1c0d48853f3e51",
+      "doi:abef9f1c0d48853f3e51#label": "Metafeature summary and visualization in walkthrough.ipynb",
+      "doi:abef9f1c0d48853f3e51#is_implemented_by": "\nmetafeatures = CSV.read(\"metafeatures.csv\", DataFrame)\n\nPlots.boxplot(\n    [\"TabMini\"],\n    metafeatures[:, \"nr_inst\"],\n    ylabel=\"Sample size\"\n)\n\nPlots.scatter(\n    metafeatures[:, \"nr_inst\"],\n    metafeatures[:, \"nr_attr\"],\n    xlabel=\"Sample size\",\n    ylabel=\"Feature set size\"\n)\n"
+    },
+    "doi:5b66cb584b974b186f37#has_input": {
+      "@id": "_:n4",
+      "@type": "doi:aff130c76e68ead3862e",
+      "doi:aff130c76e68ead3862e#label": "PMLBmini dataset meta-features from metafeatures.csv",
+      "doi:aff130c76e68ead3862e#source_table": {
+        "@type": "doi:0424f6e7026fa4bc2c4a",
+        "tab_label": "Table",
+        "columns": [
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 1,
+            "col_titles": "nr_inst",
+            "@id": "_:n5"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 2,
+            "col_titles": "nr_attr",
+            "@id": "_:n6"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 3,
+            "col_titles": "freq_class.min",
+            "@id": "_:n7"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 4,
+            "col_titles": "EPV",
+            "@id": "_:n8"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 5,
+            "col_titles": "nr_bin",
+            "@id": "_:n9"
+          }
+        ],
+        "rows": [
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 1,
+            "row_titles": "0",
+            "@id": "_:n10",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n11",
+                "value": "50.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n12",
+                "value": "4.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n13",
+                "value": "0.5",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n14",
+                "value": "6.25",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n15",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 2,
+            "row_titles": "1",
+            "@id": "_:n16",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n17",
+                "value": "83.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n18",
+                "value": "3.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n19",
+                "value": "0.4457831325301205",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n20",
+                "value": "12.333333333333334",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n21",
+                "value": "1.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 3,
+            "row_titles": "2",
+            "@id": "_:n22",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n23",
+                "value": "50.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n24",
+                "value": "6.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n25",
+                "value": "0.5",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n26",
+                "value": "4.166666666666667",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n27",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 4,
+            "row_titles": "3",
+            "@id": "_:n28",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n29",
+                "value": "100.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n30",
+                "value": "6.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n31",
+                "value": "0.27",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n32",
+                "value": "4.5",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n33",
+                "value": "2.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 5,
+            "row_titles": "4",
+            "@id": "_:n34",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n35",
+                "value": "97.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n36",
+                "value": "10.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n37",
+                "value": "0.2474226804123711",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n38",
+                "value": "2.4",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n39",
+                "value": "2.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 6,
+            "row_titles": "5",
+            "@id": "_:n40",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n41",
+                "value": "92.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n42",
+                "value": "10.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n43",
+                "value": "0.2065217391304347",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n44",
+                "value": "1.9",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n45",
+                "value": "2.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 7,
+            "row_titles": "6",
+            "@id": "_:n46",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n47",
+                "value": "42.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n48",
+                "value": "11.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n49",
+                "value": "0.3095238095238095",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n50",
+                "value": "1.181818181818182",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n51",
+                "value": "10.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 8,
+            "row_titles": "7",
+            "@id": "_:n52",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n53",
+                "value": "52.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n54",
+                "value": "9.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n55",
+                "value": "0.4807692307692308",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n56",
+                "value": "2.7777777777777777",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n57",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 9,
+            "row_titles": "8",
+            "@id": "_:n58",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n59",
+                "value": "57.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n60",
+                "value": "16.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n61",
+                "value": "0.3508771929824561",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n62",
+                "value": "1.25",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n63",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 10,
+            "row_titles": "9",
+            "@id": "_:n64",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n65",
+                "value": "87.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n66",
+                "value": "3.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n67",
+                "value": "0.4022988505747126",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n68",
+                "value": "11.666666666666666",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n69",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 11,
+            "row_titles": "10",
+            "@id": "_:n70",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n71",
+                "value": "32.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n72",
+                "value": "5.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n73",
+                "value": "0.5",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n74",
+                "value": "3.2",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n75",
+                "value": "5.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 12,
+            "row_titles": "11",
+            "@id": "_:n76",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n77",
+                "value": "88.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n78",
+                "value": "8.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n79",
+                "value": "0.2727272727272727",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n80",
+                "value": "3.0",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n81",
+                "value": "2.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 13,
+            "row_titles": "12",
+            "@id": "_:n82",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n83",
+                "value": "120.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n84",
+                "value": "3.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n85",
+                "value": "0.35",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n86",
+                "value": "14.0",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n87",
+                "value": "1.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 14,
+            "row_titles": "13",
+            "@id": "_:n88",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n89",
+                "value": "132.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n90",
+                "value": "3.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n91",
+                "value": "0.4621212121212121",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n92",
+                "value": "20.33333333333333",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n93",
+                "value": "1.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 15,
+            "row_titles": "14",
+            "@id": "_:n94",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n95",
+                "value": "106.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n96",
+                "value": "7.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n97",
+                "value": "0.1981132075471698",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n98",
+                "value": "3.0",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n99",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 16,
+            "row_titles": "15",
+            "@id": "_:n100",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n101",
+                "value": "180.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n102",
+                "value": "32.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n103",
+                "value": "0.1388888888888889",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n104",
+                "value": "0.78125",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n105",
+                "value": "22.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 17,
+            "row_titles": "16",
+            "@id": "_:n106",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n107",
+                "value": "160.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n108",
+                "value": "6.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n109",
+                "value": "0.4375",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n110",
+                "value": "11.666666666666666",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n111",
+                "value": "6.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 18,
+            "row_titles": "17",
+            "@id": "_:n112",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n113",
+                "value": "163.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n114",
+                "value": "9.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n115",
+                "value": "0.4662576687116564",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n116",
+                "value": "8.444444444444445",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n117",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 19,
+            "row_titles": "18",
+            "@id": "_:n118",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n119",
+                "value": "155.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n120",
+                "value": "19.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n121",
+                "value": "0.2064516129032258",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n122",
+                "value": "1.6842105263157894",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n123",
+                "value": "3.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 20,
+            "row_titles": "19",
+            "@id": "_:n124",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n125",
+                "value": "106.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n126",
+                "value": "57.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n127",
+                "value": "0.5",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n128",
+                "value": "0.9298245614035088",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n129",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 21,
+            "row_titles": "20",
+            "@id": "_:n130",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n131",
+                "value": "128.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n132",
+                "value": "6.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n133",
+                "value": "0.5",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n134",
+                "value": "10.666666666666666",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n135",
+                "value": "6.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 22,
+            "row_titles": "21",
+            "@id": "_:n136",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n137",
+                "value": "200.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n138",
+                "value": "7.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n139",
+                "value": "0.5",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n140",
+                "value": "14.285714285714286",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n141",
+                "value": "1.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 23,
+            "row_titles": "22",
+            "@id": "_:n142",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n143",
+                "value": "264.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n144",
+                "value": "4.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n145",
+                "value": "0.0719696969696969",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n146",
+                "value": "4.75",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n147",
+                "value": "1.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 24,
+            "row_titles": "23",
+            "@id": "_:n148",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n149",
+                "value": "209.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n150",
+                "value": "8.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n151",
+                "value": "0.3588516746411483",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n152",
+                "value": "9.375",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n153",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 25,
+            "row_titles": "24",
+            "@id": "_:n154",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n155",
+                "value": "286.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n156",
+                "value": "9.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n157",
+                "value": "0.2972027972027972",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n158",
+                "value": "9.444444444444445",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n159",
+                "value": "2.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 26,
+            "row_titles": "25",
+            "@id": "_:n160",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n161",
+                "value": "294.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n162",
+                "value": "13.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n163",
+                "value": "0.3605442176870748",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n164",
+                "value": "8.153846153846153",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n165",
+                "value": "2.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 27,
+            "row_titles": "26",
+            "@id": "_:n166",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n167",
+                "value": "270.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n168",
+                "value": "13.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n169",
+                "value": "0.4444444444444444",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n170",
+                "value": "9.23076923076923",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n171",
+                "value": "3.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 28,
+            "row_titles": "27",
+            "@id": "_:n172",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n173",
+                "value": "294.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n174",
+                "value": "13.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n175",
+                "value": "0.3605442176870748",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n176",
+                "value": "8.153846153846153",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n177",
+                "value": "2.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 29,
+            "row_titles": "28",
+            "@id": "_:n178",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n179",
+                "value": "250.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n180",
+                "value": "2.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n181",
+                "value": "0.5",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n182",
+                "value": "62.5",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n183",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 30,
+            "row_titles": "29",
+            "@id": "_:n184",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n185",
+                "value": "208.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n186",
+                "value": "60.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n187",
+                "value": "0.4663461538461538",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n188",
+                "value": "1.6166666666666667",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n189",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 31,
+            "row_titles": "30",
+            "@id": "_:n190",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n191",
+                "value": "267.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n192",
+                "value": "22.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n193",
+                "value": "0.2059925093632958",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n194",
+                "value": "2.5",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n195",
+                "value": "22.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 32,
+            "row_titles": "31",
+            "@id": "_:n196",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n197",
+                "value": "345.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n198",
+                "value": "5.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n199",
+                "value": "0.4898550724637681",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n200",
+                "value": "33.8",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n201",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 33,
+            "row_titles": "32",
+            "@id": "_:n202",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n203",
+                "value": "303.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n204",
+                "value": "13.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n205",
+                "value": "0.4554455445544554",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n206",
+                "value": "10.615384615384617",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n207",
+                "value": "3.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 34,
+            "row_titles": "33",
+            "@id": "_:n208",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n209",
+                "value": "368.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n210",
+                "value": "22.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n211",
+                "value": "0.3695652173913043",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n212",
+                "value": "6.181818181818182",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n213",
+                "value": "1.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 35,
+            "row_titles": "34",
+            "@id": "_:n214",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n215",
+                "value": "306.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n216",
+                "value": "3.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n217",
+                "value": "0.2647058823529412",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n218",
+                "value": "27.0",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n219",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 36,
+            "row_titles": "35",
+            "@id": "_:n220",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n221",
+                "value": "303.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n222",
+                "value": "13.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n223",
+                "value": "0.4554455445544554",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n224",
+                "value": "10.615384615384617",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n225",
+                "value": "3.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 37,
+            "row_titles": "36",
+            "@id": "_:n226",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n227",
+                "value": "368.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n228",
+                "value": "22.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n229",
+                "value": "0.3695652173913043",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n230",
+                "value": "6.181818181818182",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n231",
+                "value": "1.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 38,
+            "row_titles": "37",
+            "@id": "_:n232",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n233",
+                "value": "351.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n234",
+                "value": "34.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n235",
+                "value": "0.358974358974359",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n236",
+                "value": "3.7058823529411766",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n237",
+                "value": "1.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 39,
+            "row_titles": "38",
+            "@id": "_:n238",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n239",
+                "value": "349.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n240",
+                "value": "44.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n241",
+                "value": "0.2722063037249284",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n242",
+                "value": "2.159090909090909",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n243",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 40,
+            "row_titles": "39",
+            "@id": "_:n244",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n245",
+                "value": "476.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n246",
+                "value": "168.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n247",
+                "value": "0.4348739495798319",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n248",
+                "value": "1.2321428571428572",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n249",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 41,
+            "row_titles": "40",
+            "@id": "_:n250",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n251",
+                "value": "435.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n252",
+                "value": "16.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n253",
+                "value": "0.3862068965517241",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n254",
+                "value": "10.5",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n255",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 42,
+            "row_titles": "41",
+            "@id": "_:n256",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n257",
+                "value": "500.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n258",
+                "value": "5.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n259",
+                "value": "0.444",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n260",
+                "value": "44.4",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n261",
+                "value": "1.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 43,
+            "row_titles": "42",
+            "@id": "_:n262",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n263",
+                "value": "462.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n264",
+                "value": "9.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n265",
+                "value": "0.3463203463203463",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n266",
+                "value": "17.77777777777778",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n267",
+                "value": "1.0",
+                "column": "_:n9"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 44,
+            "row_titles": "43",
+            "@id": "_:n268",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n269",
+                "value": "435.0",
+                "column": "_:n5"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n270",
+                "value": "16.0",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n271",
+                "value": "0.3862068965517241",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n272",
+                "value": "10.5",
+                "column": "_:n8"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n273",
+                "value": "0.0",
+                "column": "_:n9"
+              }
+            ]
+          }
+        ],
+        "@id": "_:n274"
+      }
+    },
+    "doi:5b66cb584b974b186f37#has_output": {
+      "@id": "_:n275",
+      "@type": "doi:aff130c76e68ead3862e",
+      "doi:aff130c76e68ead3862e#label": "Summary statistics for selected PMLBmini meta-features used for the boxplot and scatter plot.",
+      "doi:aff130c76e68ead3862e#source_table": {
+        "@type": "doi:0424f6e7026fa4bc2c4a",
+        "tab_label": "Table",
+        "columns": [
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 1,
+            "col_titles": "metafeature",
+            "@id": "_:n276"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 2,
+            "col_titles": "count",
+            "@id": "_:n277"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 3,
+            "col_titles": "mean",
+            "@id": "_:n278"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 4,
+            "col_titles": "std",
+            "@id": "_:n279"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 5,
+            "col_titles": "min",
+            "@id": "_:n280"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 6,
+            "col_titles": "25%",
+            "@id": "_:n281"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 7,
+            "col_titles": "50%",
+            "@id": "_:n282"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 8,
+            "col_titles": "75%",
+            "@id": "_:n283"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 9,
+            "col_titles": "max",
+            "@id": "_:n284"
+          }
+        ],
+        "rows": [
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 1,
+            "row_titles": "0",
+            "@id": "_:n285",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n286",
+                "value": "nr_inst",
+                "column": "_:n276"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n287",
+                "value": "44.0",
+                "column": "_:n277"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n288",
+                "value": "218.70454545454547",
+                "column": "_:n278"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n289",
+                "value": "134.4318932855843",
+                "column": "_:n279"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n290",
+                "value": "32.0",
+                "column": "_:n280"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n291",
+                "value": "99.25",
+                "column": "_:n281"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n292",
+                "value": "204.0",
+                "column": "_:n282"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n293",
+                "value": "303.75",
+                "column": "_:n283"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n294",
+                "value": "500.0",
+                "column": "_:n284"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 2,
+            "row_titles": "1",
+            "@id": "_:n295",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n296",
+                "value": "nr_attr",
+                "column": "_:n276"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n297",
+                "value": "44.0",
+                "column": "_:n277"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n298",
+                "value": "17.136363636363637",
+                "column": "_:n278"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n299",
+                "value": "26.791695093894834",
+                "column": "_:n279"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n300",
+                "value": "2.0",
+                "column": "_:n280"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n301",
+                "value": "5.75",
+                "column": "_:n281"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n302",
+                "value": "9.0",
+                "column": "_:n282"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n303",
+                "value": "16.0",
+                "column": "_:n283"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n304",
+                "value": "168.0",
+                "column": "_:n284"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 3,
+            "row_titles": "2",
+            "@id": "_:n305",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n306",
+                "value": "freq_class.min",
+                "column": "_:n276"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n307",
+                "value": "44.0",
+                "column": "_:n277"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n308",
+                "value": "0.37146644184262256",
+                "column": "_:n278"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n309",
+                "value": "0.11118477127460802",
+                "column": "_:n279"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n310",
+                "value": "0.0719696969696969",
+                "column": "_:n280"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n311",
+                "value": "0.29108391608391604",
+                "column": "_:n281"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n312",
+                "value": "0.37788605697151423",
+                "column": "_:n282"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n313",
+                "value": "0.46315532626882316",
+                "column": "_:n283"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n314",
+                "value": "0.5",
+                "column": "_:n284"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 4,
+            "row_titles": "3",
+            "@id": "_:n315",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n316",
+                "value": "EPV",
+                "column": "_:n276"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n317",
+                "value": "44.0",
+                "column": "_:n277"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n318",
+                "value": "10.018460119357687",
+                "column": "_:n278"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n319",
+                "value": "11.978627660741637",
+                "column": "_:n279"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n320",
+                "value": "0.78125",
+                "column": "_:n280"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n321",
+                "value": "2.708333333333333",
+                "column": "_:n281"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n322",
+                "value": "7.201923076923077",
+                "column": "_:n282"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n323",
+                "value": "10.916666666666666",
+                "column": "_:n283"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n324",
+                "value": "62.5",
+                "column": "_:n284"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 5,
+            "row_titles": "4",
+            "@id": "_:n325",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n326",
+                "value": "nr_bin",
+                "column": "_:n276"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n327",
+                "value": "44.0",
+                "column": "_:n277"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n328",
+                "value": "2.4318181818181817",
+                "column": "_:n278"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n329",
+                "value": "4.771025569982745",
+                "column": "_:n279"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n330",
+                "value": "0.0",
+                "column": "_:n280"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n331",
+                "value": "0.0",
+                "column": "_:n281"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n332",
+                "value": "1.0",
+                "column": "_:n282"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n333",
+                "value": "2.0",
+                "column": "_:n283"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n334",
+                "value": "22.0",
+                "column": "_:n284"
+              }
+            ]
+          }
+        ],
+        "@id": "_:n335"
+      }
+    }
+  },
+  "@context": {
+    "doi": "https://doi.org/21.T11969/",
+    "columns": "https://doi.org/21.T11969/0424f6e7026fa4bc2c4a#columns",
+    "col_number": "https://doi.org/21.T11969/65ba00e95e60fb8971e6#number",
+    "col_titles": "https://doi.org/21.T11969/65ba00e95e60fb8971e6#titles",
+    "rows": "https://doi.org/21.T11969/0424f6e7026fa4bc2c4a#rows",
+    "row_number": "https://doi.org/21.T11969/9bf7a8e8909bfd491b38#number",
+    "row_titles": "https://doi.org/21.T11969/9bf7a8e8909bfd491b38#titles",
+    "cells": "https://doi.org/21.T11969/9bf7a8e8909bfd491b38#cells",
+    "column": "https://doi.org/21.T11969/4607bc7c42ac8db29bfc#column",
+    "value": "https://doi.org/21.T11969/4607bc7c42ac8db29bfc#value",
+    "tab_label": "https://doi.org/21.T11969/0424f6e7026fa4bc2c4a#label"
+  }
+}

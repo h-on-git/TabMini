@@ -1,0 +1,1001 @@
+{
+  "@id": "_:n1",
+  "@type": "doi:feeb33ad3e4440682a4d",
+  "doi:feeb33ad3e4440682a4d#has_part": {
+    "@id": "_:n2",
+    "@type": "doi:5b66cb584b974b186f37",
+    "doi:5b66cb584b974b186f37#label": "Summary of PMLBmini meta-feature categories correlated with machine learning method performance, used for Figure 3.",
+    "doi:5b66cb584b974b186f37#executes": {
+      "@id": "_:n3",
+      "@type": "doi:abef9f1c0d48853f3e51",
+      "doi:abef9f1c0d48853f3e51#label": "Metafeature correlation category summary and stacked bar plot in walkthrough.ipynb",
+      "doi:abef9f1c0d48853f3e51#is_implemented_by": "\nmethods = [\"AutoPrognosis\", \"AutoGluon\", \"TabPFN\", \"HyperFast\"]\n\npy\"generate_correlations\"(\n    methods,\n    \"results/test_scores_wide_3600.csv\"\n)\n\nStatsPlots.groupedbar(\n    [clustering complexity concept general infotheory itemset landmarking modelbased statistical],\n    bar_position=:stack,\n    xticks=(1:4, [\"AutoPrognosis\" \"AutoGluon\" \"TabPFN\" \"HyperFast\"]),\n    label=[\"Clustering\" \"Complexity\" \"Concept\" \"General\" \"Info theory\" \"Itemset\" \"Landmarking\" \"Model-based\" \"Statistical\"]\n)\n\nsavefig(\"plots/bar.svg\")\nsavefig(\"plots/bar.pdf\")\n"
+    },
+    "doi:5b66cb584b974b186f37#has_input": {
+      "@id": "_:n4",
+      "@type": "doi:aff130c76e68ead3862e",
+      "doi:aff130c76e68ead3862e#label": "PMLBmini 3600-second benchmark test scores and generated meta-feature correlations from correlations.txt."
+    },
+    "doi:5b66cb584b974b186f37#has_output": {
+      "@id": "_:n5",
+      "@type": "doi:aff130c76e68ead3862e",
+      "doi:aff130c76e68ead3862e#label": "Counts of correlated meta-feature categories by machine learning method for the Figure 3 stacked bar plot.",
+      "doi:aff130c76e68ead3862e#source_table": {
+        "@type": "doi:0424f6e7026fa4bc2c4a",
+        "tab_label": "Table",
+        "columns": [
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 1,
+            "col_titles": "approach",
+            "@id": "_:n6"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 2,
+            "col_titles": "metafeature_category",
+            "@id": "_:n7"
+          },
+          {
+            "@type": "doi:65ba00e95e60fb8971e6",
+            "col_number": 3,
+            "col_titles": "count",
+            "@id": "_:n8"
+          }
+        ],
+        "rows": [
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 1,
+            "row_titles": "0",
+            "@id": "_:n9",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n10",
+                "value": "AutoPrognosis",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n11",
+                "value": "Clustering",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n12",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 2,
+            "row_titles": "1",
+            "@id": "_:n13",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n14",
+                "value": "AutoGluon",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n15",
+                "value": "Clustering",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n16",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 3,
+            "row_titles": "2",
+            "@id": "_:n17",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n18",
+                "value": "TabPFN",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n19",
+                "value": "Clustering",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n20",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 4,
+            "row_titles": "3",
+            "@id": "_:n21",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n22",
+                "value": "HyperFast",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n23",
+                "value": "Clustering",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n24",
+                "value": "1",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 5,
+            "row_titles": "4",
+            "@id": "_:n25",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n26",
+                "value": "AutoPrognosis",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n27",
+                "value": "Complexity",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n28",
+                "value": "3",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 6,
+            "row_titles": "5",
+            "@id": "_:n29",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n30",
+                "value": "AutoGluon",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n31",
+                "value": "Complexity",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n32",
+                "value": "2",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 7,
+            "row_titles": "6",
+            "@id": "_:n33",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n34",
+                "value": "TabPFN",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n35",
+                "value": "Complexity",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n36",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 8,
+            "row_titles": "7",
+            "@id": "_:n37",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n38",
+                "value": "HyperFast",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n39",
+                "value": "Complexity",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n40",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 9,
+            "row_titles": "8",
+            "@id": "_:n41",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n42",
+                "value": "AutoPrognosis",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n43",
+                "value": "Concept",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n44",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 10,
+            "row_titles": "9",
+            "@id": "_:n45",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n46",
+                "value": "AutoGluon",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n47",
+                "value": "Concept",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n48",
+                "value": "4",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 11,
+            "row_titles": "10",
+            "@id": "_:n49",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n50",
+                "value": "TabPFN",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n51",
+                "value": "Concept",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n52",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 12,
+            "row_titles": "11",
+            "@id": "_:n53",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n54",
+                "value": "HyperFast",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n55",
+                "value": "Concept",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n56",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 13,
+            "row_titles": "12",
+            "@id": "_:n57",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n58",
+                "value": "AutoPrognosis",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n59",
+                "value": "General",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n60",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 14,
+            "row_titles": "13",
+            "@id": "_:n61",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n62",
+                "value": "AutoGluon",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n63",
+                "value": "General",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n64",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 15,
+            "row_titles": "14",
+            "@id": "_:n65",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n66",
+                "value": "TabPFN",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n67",
+                "value": "General",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n68",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 16,
+            "row_titles": "15",
+            "@id": "_:n69",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n70",
+                "value": "HyperFast",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n71",
+                "value": "General",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n72",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 17,
+            "row_titles": "16",
+            "@id": "_:n73",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n74",
+                "value": "AutoPrognosis",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n75",
+                "value": "Info theory",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n76",
+                "value": "2",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 18,
+            "row_titles": "17",
+            "@id": "_:n77",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n78",
+                "value": "AutoGluon",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n79",
+                "value": "Info theory",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n80",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 19,
+            "row_titles": "18",
+            "@id": "_:n81",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n82",
+                "value": "TabPFN",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n83",
+                "value": "Info theory",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n84",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 20,
+            "row_titles": "19",
+            "@id": "_:n85",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n86",
+                "value": "HyperFast",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n87",
+                "value": "Info theory",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n88",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 21,
+            "row_titles": "20",
+            "@id": "_:n89",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n90",
+                "value": "AutoPrognosis",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n91",
+                "value": "Itemset",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n92",
+                "value": "2",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 22,
+            "row_titles": "21",
+            "@id": "_:n93",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n94",
+                "value": "AutoGluon",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n95",
+                "value": "Itemset",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n96",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 23,
+            "row_titles": "22",
+            "@id": "_:n97",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n98",
+                "value": "TabPFN",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n99",
+                "value": "Itemset",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n100",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 24,
+            "row_titles": "23",
+            "@id": "_:n101",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n102",
+                "value": "HyperFast",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n103",
+                "value": "Itemset",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n104",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 25,
+            "row_titles": "24",
+            "@id": "_:n105",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n106",
+                "value": "AutoPrognosis",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n107",
+                "value": "Landmarking",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n108",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 26,
+            "row_titles": "25",
+            "@id": "_:n109",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n110",
+                "value": "AutoGluon",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n111",
+                "value": "Landmarking",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n112",
+                "value": "1",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 27,
+            "row_titles": "26",
+            "@id": "_:n113",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n114",
+                "value": "TabPFN",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n115",
+                "value": "Landmarking",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n116",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 28,
+            "row_titles": "27",
+            "@id": "_:n117",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n118",
+                "value": "HyperFast",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n119",
+                "value": "Landmarking",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n120",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 29,
+            "row_titles": "28",
+            "@id": "_:n121",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n122",
+                "value": "AutoPrognosis",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n123",
+                "value": "Model-based",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n124",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 30,
+            "row_titles": "29",
+            "@id": "_:n125",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n126",
+                "value": "AutoGluon",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n127",
+                "value": "Model-based",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n128",
+                "value": "1",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 31,
+            "row_titles": "30",
+            "@id": "_:n129",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n130",
+                "value": "TabPFN",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n131",
+                "value": "Model-based",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n132",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 32,
+            "row_titles": "31",
+            "@id": "_:n133",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n134",
+                "value": "HyperFast",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n135",
+                "value": "Model-based",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n136",
+                "value": "0",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 33,
+            "row_titles": "32",
+            "@id": "_:n137",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n138",
+                "value": "AutoPrognosis",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n139",
+                "value": "Statistical",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n140",
+                "value": "3",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 34,
+            "row_titles": "33",
+            "@id": "_:n141",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n142",
+                "value": "AutoGluon",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n143",
+                "value": "Statistical",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n144",
+                "value": "2",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 35,
+            "row_titles": "34",
+            "@id": "_:n145",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n146",
+                "value": "TabPFN",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n147",
+                "value": "Statistical",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n148",
+                "value": "10",
+                "column": "_:n8"
+              }
+            ]
+          },
+          {
+            "@type": "doi:9bf7a8e8909bfd491b38",
+            "row_number": 36,
+            "row_titles": "35",
+            "@id": "_:n149",
+            "cells": [
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n150",
+                "value": "HyperFast",
+                "column": "_:n6"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n151",
+                "value": "Statistical",
+                "column": "_:n7"
+              },
+              {
+                "@type": "doi:4607bc7c42ac8db29bfc",
+                "@id": "_:n152",
+                "value": "9",
+                "column": "_:n8"
+              }
+            ]
+          }
+        ],
+        "@id": "_:n153"
+      }
+    }
+  },
+  "@context": {
+    "doi": "https://doi.org/21.T11969/",
+    "columns": "https://doi.org/21.T11969/0424f6e7026fa4bc2c4a#columns",
+    "col_number": "https://doi.org/21.T11969/65ba00e95e60fb8971e6#number",
+    "col_titles": "https://doi.org/21.T11969/65ba00e95e60fb8971e6#titles",
+    "rows": "https://doi.org/21.T11969/0424f6e7026fa4bc2c4a#rows",
+    "row_number": "https://doi.org/21.T11969/9bf7a8e8909bfd491b38#number",
+    "row_titles": "https://doi.org/21.T11969/9bf7a8e8909bfd491b38#titles",
+    "cells": "https://doi.org/21.T11969/9bf7a8e8909bfd491b38#cells",
+    "column": "https://doi.org/21.T11969/4607bc7c42ac8db29bfc#column",
+    "value": "https://doi.org/21.T11969/4607bc7c42ac8db29bfc#value",
+    "tab_label": "https://doi.org/21.T11969/0424f6e7026fa4bc2c4a#label"
+  }
+}
